@@ -1,0 +1,27 @@
+{
+  "arxiv": {
+    "categories": ["cs.CV"],
+    "max_results": 100,
+    "recent_days": 3,
+    "citation_lookback_days": 60,
+    "min_citations_for_highlight": 5
+  },
+  "report": {
+    "max_papers": 5,
+    "languages": ["en"],
+    "output_format": ["markdown", "html"],
+    "output_directory": "reports"
+  },
+  "email": {
+    "enabled": true,
+    "subject_prefix": "[Arxiv CV Report]",
+    "include_full_report": true,
+    "include_summary": true
+  },
+  "llm": {
+    "model": "gemini-2.5-flash",
+    "temperature": 0.2,
+    "max_output_tokens": 8096,
+    "summary_length": "medium"
+  }
+}

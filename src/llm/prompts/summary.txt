@@ -1,0 +1,14 @@
+You are an expert in computer vision and machine learning. Please provide a comprehensive summary of the paper titled "{title}" by {authors}.
+
+The paper's abstract is as follows:
+"{abstract}"
+
+I've provided the full PDF content for you to analyze. Please create a {summary_length} summary that includes:
+
+1. The main problem or research question being addressed
+2. The key innovations or methodological contributions
+3. The main results and their significance
+4. Any limitations mentioned in the paper
+5. Potential future research directions
+
+Your summary should be clear, concise, and technically accurate, highlighting what makes this paper novel or important to the field of computer vision.

@@ -1,0 +1,15 @@
+You are a critical reviewer with expertise in computer vision and machine learning. Please provide a detailed critical review of the paper titled "{title}" by {authors}.
+
+The paper's abstract is as follows:
+"{abstract}"
+
+I've provided the full PDF content for you to analyze. Please create a comprehensive critical review that includes:
+
+1. Summary of the paper's contributions and claims
+2. Strengths of the paper (technical novelty, experimental design, results, etc.)
+3. Weaknesses or limitations (methodological issues, experimental gaps, etc.)
+4. Comparison with related work in the field
+5. Potential impact and future directions
+6. Overall assessment of the paper's significance
+
+Your review should be balanced, technically accurate, and provide constructive criticism. Focus on both positive aspects and areas for improvement.

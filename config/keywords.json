@@ -1,0 +1,43 @@
+{
+  "primary_keywords": [
+    "computer vision",
+    "deep learning",
+    "neural networks",
+    "object detection",
+    "image segmentation",
+    "transformer",
+    "attention mechanism",
+    "self-supervised learning",
+    "3D Gaussian",
+    "Diffusion"
+  ],
+  "secondary_keywords": [
+    "CNN",
+    "convolutional",
+    "GAN",
+    "diffusion",
+    "CLIP",
+    "vision transformer",
+    "ViT",
+    "foundation model",
+    "multimodal",
+    "3D reconstruction",
+    "point cloud",
+    "semantic segmentation",
+    "instance segmentation",
+    "zero-shot",
+    "representation learning"
+  ],
+  "exclude_keywords": [
+    "survey",
+    "review"
+  ],
+  "author_preferences": [],
+  "weight_factors": {
+    "title_match": 2.0,
+    "abstract_match": 1.0,
+    "primary_keyword_match": 1.5,
+    "secondary_keyword_match": 1.0
+  },
+  "minimum_match_score": 1.5
+}

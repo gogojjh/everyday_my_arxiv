@@ -1,0 +1,6 @@
+arxiv==1.4.7
+google-generativeai>=0.3.0
+httpx==0.24.1
+markdown==3.4.3
+python-dotenv==1.0.0
+scholarly==1.7.11

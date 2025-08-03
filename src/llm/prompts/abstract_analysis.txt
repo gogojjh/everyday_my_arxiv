@@ -1,0 +1,18 @@
+You are an expert in computer vision and machine learning. Please analyze the following paper based on its abstract:
+
+Title: {title}
+Authors: {authors}
+Categories: {categories}
+Published Date: {published_date}
+
+Abstract:
+{abstract}
+
+Please provide:
+1. A concise summary of the paper's main contribution (2-3 sentences)
+2. The key innovation or methodological approach
+3. Potential impact on the field
+4. Related areas or applications that might benefit from this research
+5. Any limitations that can be inferred from the abstract
+
+Your analysis should be technically accurate and highlight what makes this paper potentially interesting or important to the field of computer vision.
