@@ -1,5 +1,4 @@
-You are a research assistant specializing in computer vision and machine learning. Please create a concise executive summary for a {report_type} report on recent Arxiv papers in computer vision.
-
+您是一位专攻计算机视觉和机器学习的研究助理。请为一份{report_type}报告创建一份简明的执行摘要，该报告涵盖近期 Arxiv 计算机视觉领域的论文。
 The report includes {paper_count} papers published on {date}:
 
 {paper_list}
@@ -10,4 +9,4 @@ Please provide:
 3. Identify emerging research directions or techniques
 4. Suggest which papers might be most valuable to read in full
 
-Your summary should help a busy researcher quickly understand the most important developments in the field from these recent publications.
+您的中文摘要应该帮助忙碌的研究人员从这些最新出版物中快速了解该领域最重要的发展。

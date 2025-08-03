@@ -1,4 +1,5 @@
-You are an expert in computer vision and machine learning. Please provide a comprehensive summary of the paper titled "{title}" by {authors}.
+
+您是计算机视觉和机器学习领域的专家。请提供{authors}撰写的论文“{title}”的全面摘要。
 
 The paper's abstract is as follows:
 "{abstract}"
@@ -11,4 +12,4 @@ I've provided the full PDF content for you to analyze. Please create a {summary_
 4. Any limitations mentioned in the paper
 5. Potential future research directions
 
-Your summary should be clear, concise, and technically accurate, highlighting what makes this paper novel or important to the field of computer vision.
+您使用中文写成的摘要应该清晰、简洁、技术准确，突出这篇论文对计算机视觉领域的新颖性或重要性。

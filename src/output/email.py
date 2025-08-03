@@ -4,6 +4,7 @@ Email notification module for Arxiv paper reports.
 import json
 import os
 import smtplib
+import ssl
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from typing import Dict, List, Optional
@@ -20,8 +21,8 @@ class EmailNotifier:
         self.include_summary = self.config['include_summary']
         
         # Get email credentials from environment variables
-        self.smtp_server = os.environ.get("EMAIL_SMTP_SERVER")
-        self.smtp_port = int(os.environ.get("EMAIL_SMTP_PORT", "587"))
+        self.smtp_server = os.environ.get("EMAIL_SMTP_SERVER", "smtp-mail.outlook.com")  # Default Outlook SMTP server
+        self.smtp_port = int(os.environ.get("EMAIL_SMTP_PORT", "587"))  # Default Outlook SMTP port
         self.sender_email = os.environ.get("EMAIL_SENDER")
         self.sender_password = os.environ.get("EMAIL_PASSWORD")
         self.recipient_email = os.environ.get("EMAIL_RECIPIENT")
@@ -74,12 +75,16 @@ class EmailNotifier:
                     html_content = f.read()
                 msg.attach(MIMEText(html_content, 'html'))
             
+            # Create a secure SSL context for the connection
+            context = ssl.create_default_context()
+            
             # Connect to server and send email
-            server = smtplib.SMTP(self.smtp_server, self.smtp_port)
-            server.starttls()
-            server.login(self.sender_email, self.sender_password)
-            server.send_message(msg)
-            server.quit()
+            with smtplib.SMTP(self.smtp_server, self.smtp_port) as server:
+                server.ehlo()  # Can be omitted
+                server.starttls(context=context)  # Secure the connection
+                server.ehlo()  # Can be omitted
+                server.login(self.sender_email, self.sender_password)
+                server.send_message(msg)
             
             print(f"Email sent successfully to {self.recipient_email}")
             return True

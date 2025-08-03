@@ -26,7 +26,11 @@
     "semantic segmentation",
     "instance segmentation",
     "zero-shot",
-    "representation learning"
+    "representation learning",
+    "autonomous driving",
+    "BEV",
+    "LiDAR",
+    "camera"
   ],
   "exclude_keywords": [
     "survey",
