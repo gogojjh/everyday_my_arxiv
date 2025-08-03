@@ -67,15 +67,15 @@ def main():
     keyword_matched_papers = arxiv_parser.filter_papers_by_keywords(recent_papers)
     print(f"Found {len(keyword_matched_papers)} papers matching keywords")
     
-    # 5. Get most cited papers from the past N days
-    print("Fetching citation data for recent papers...")
-    most_cited_papers = arxiv_client.get_most_cited_papers(days=config['arxiv']['citation_lookback_days'])
-    highly_cited_papers = citation_analyzer.identify_highly_cited_papers(most_cited_papers)
-    print(f"Found {len(highly_cited_papers)} highly cited papers")
+    # # 5. Get most cited papers from the past N days
+    # print("Fetching citation data for recent papers...")
+    # most_cited_papers = arxiv_client.get_most_cited_papers(days=config['arxiv']['citation_lookback_days'])
+    # highly_cited_papers = citation_analyzer.identify_highly_cited_papers(most_cited_papers)
+    # print(f"Found {len(highly_cited_papers)} highly cited papers")
     
-    # 6. Combine keyword-matched and highly-cited papers
-    combined_papers = keyword_matched_papers + highly_cited_papers
-    combined_papers = paper_filter.filter_duplicates(combined_papers)
+    # # 6. Combine keyword-matched and highly-cited papers
+    # combined_papers = keyword_matched_papers + highly_cited_papers
+    combined_papers = paper_filter.filter_duplicates(keyword_matched_papers)
     
     # 7. Limit the number of papers
     max_papers = config['report']['max_papers']
