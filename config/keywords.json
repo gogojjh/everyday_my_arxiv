@@ -1,18 +1,16 @@
 {
   "primary_keywords": [
     "computer vision",
-    "deep learning",
-    "neural networks",
     "object detection",
     "image segmentation",
     "transformer",
-    "attention mechanism",
     "self-supervised learning",
     "3D Gaussian",
+    "autonomous driving",
+    "foundation model",
     "Diffusion"
   ],
   "secondary_keywords": [
-    "CNN",
     "convolutional",
     "GAN",
     "diffusion",
@@ -23,18 +21,20 @@
     "multimodal",
     "3D reconstruction",
     "point cloud",
-    "semantic segmentation",
-    "instance segmentation",
+    "segmentation",
     "zero-shot",
-    "representation learning",
-    "autonomous driving",
+    "occupancy",
+    "Open-Vocabulary",
+    "LoRA",
+    "SLAM",
     "BEV",
     "LiDAR",
-    "camera"
+    "camera",
+    "survey",
+    "benchmark"
   ],
   "exclude_keywords": [
-    "survey",
-    "review"
+    "medical"
   ],
   "author_preferences": [],
   "weight_factors": {
@@ -43,5 +43,5 @@
     "primary_keyword_match": 1.5,
     "secondary_keyword_match": 1.0
   },
-  "minimum_match_score": 1.5
+  "minimum_match_score": 1.0
 }

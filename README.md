@@ -6,11 +6,16 @@ An automated system that generates daily reports on the latest Computer Vision a
 
 - Daily monitoring of new Arxiv papers in Computer Vision and Pattern Recognition
 - Keyword-based filtering to match your research interests
-- Identification of highly-cited recent papers
 - AI-powered summarization and analysis using Google's Gemini API
 - Automated report generation in Markdown/HTML format
 - Email notifications with daily findings
 - GitHub Actions automation for daily execution
+
+## System Architecture
+
+The following diagram illustrates the architecture and workflow of the Arxiv Paper Report System:
+
+![System Architecture](docs/system_architecture.svg)
 
 ## Repository Structure
 
@@ -65,6 +70,7 @@ To enable GitHub Actions:
 1. Add your Google API key as a GitHub secret named `GOOGLE_API_KEY`
 2. Add your email credentials as GitHub secrets
 3. The workflow will run daily and send reports to your email
+4. The daily report contents will be released in Github.
 
 ## Local Testing
 

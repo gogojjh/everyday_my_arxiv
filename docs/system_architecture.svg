@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient for background -->
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Arrow marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057" />
+    </marker>
+    
+    <!-- Styles for components -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3" />
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-gradient)" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#212529">Arxiv Paper Report System Architecture</text>
+  
+  <!-- Data Source -->
+  <rect x="50" y="100" width="120" height="60" rx="10" ry="10" fill="#4dabf7" filter="url(#shadow)" />
+  <text x="110" y="135" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Arxiv API</text>
+  
+  <!-- Processing Components -->
+  <rect x="250" y="100" width="300" height="200" rx="10" ry="10" fill="#e9ecef" stroke="#adb5bd" stroke-width="2" filter="url(#shadow)" />
+  <text x="400" y="125" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#212529">Processing Pipeline</text>
+  
+  <!-- Sub-components inside Processing -->
+  <rect x="270" y="140" width="120" height="40" rx="5" ry="5" fill="#74c0fc" />
+  <text x="330" y="165" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#212529">Paper Filtering</text>
+  
+  <rect x="270" y="190" width="120" height="40" rx="5" ry="5" fill="#74c0fc" />
+  <text x="330" y="215" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#212529">Citation Analysis</text>
+  
+  <rect x="410" y="140" width="120" height="40" rx="5" ry="5" fill="#74c0fc" />
+  <text x="470" y="165" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#212529">Gemini AI</text>
+  
+  <rect x="410" y="190" width="120" height="40" rx="5" ry="5" fill="#74c0fc" />
+  <text x="470" y="215" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#212529">Translation</text>
+  
+  <rect x="340" y="240" width="120" height="40" rx="5" ry="5" fill="#74c0fc" />
+  <text x="400" y="265" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#212529">Report Generation</text>
+  
+  <!-- Output Components -->
+  <rect x="650" y="100" width="120" height="60" rx="10" ry="10" fill="#51cf66" filter="url(#shadow)" />
+  <text x="710" y="135" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">GitHub Release</text>
+  
+  <rect x="650" y="190" width="120" height="60" rx="10" ry="10" fill="#51cf66" filter="url(#shadow)" />
+  <text x="710" y="225" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Email Report</text>
+  
+  <!-- Automation Component -->
+  <rect x="340" y="350" width="120" height="60" rx="10" ry="10" fill="#ff922b" filter="url(#shadow)" />
+  <text x="400" y="385" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">GitHub Actions</text>
+  
+  <!-- File Components -->
+  <rect x="100" y="450" width="600" height="100" rx="10" ry="10" fill="#f8f9fa" stroke="#adb5bd" stroke-width="2" filter="url(#shadow)" />
+  <text x="400" y="475" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#212529">Project Files</text>
+  
+  <!-- File sub-components -->
+  <rect x="120" y="490" width="100" height="40" rx="5" ry="5" fill="#e9ecef" stroke="#adb5bd" />
+  <text x="170" y="515" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#212529">config/</text>
+  
+  <rect x="240" y="490" width="100" height="40" rx="5" ry="5" fill="#e9ecef" stroke="#adb5bd" />
+  <text x="290" y="515" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#212529">src/</text>
+  
+  <rect x="360" y="490" width="100" height="40" rx="5" ry="5" fill="#e9ecef" stroke="#adb5bd" />
+  <text x="410" y="515" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#212529">scripts/</text>
+  
+  <rect x="480" y="490" width="100" height="40" rx="5" ry="5" fill="#e9ecef" stroke="#adb5bd" />
+  <text x="530" y="515" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#212529">.github/</text>
+  
+  <rect x="600" y="490" width="80" height="40" rx="5" ry="5" fill="#e9ecef" stroke="#adb5bd" />
+  <text x="640" y="515" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#212529">reports/</text>
+  
+  <!-- Connections -->
+  <!-- Arxiv to Processing -->
+  <line x1="170" y1="130" x2="250" y2="130" stroke="#495057" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Processing to Outputs -->
+  <line x1="550" y1="130" x2="650" y2="130" stroke="#495057" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="550" y1="200" x2="650" y2="220" stroke="#495057" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- GitHub Actions to Processing -->
+  <line x1="400" y1="350" x2="400" y2="300" stroke="#495057" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Files to Processing -->
+  <line x1="400" y1="450" x2="400" y2="410" stroke="#495057" stroke-width="2" marker-end="url(#arrowhead)" />
+</svg>
