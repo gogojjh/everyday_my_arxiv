@@ -1,4 +1,4 @@
-您是一位专攻计算机视觉和机器学习的研究助理。请为一份{report_type}报告创建一份简明的执行摘要，该报告涵盖近期 Arxiv 计算机视觉领域的论文。
+您是一位专攻计算机视觉和机器学习的研究助理。请为一份{report_type}报告创建一份简明的执行摘要，该报告涵盖近期 Arxiv 机器人领域的论文。
 The report includes {paper_count} papers published on {date}:
 
 {paper_list}

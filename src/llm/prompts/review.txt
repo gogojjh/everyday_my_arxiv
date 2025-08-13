@@ -1,4 +1,4 @@
-您是一位精通计算机视觉和机器学习的审稿专家。请对{authors}撰写的题为“{title}”的论文提供详细的审稿意见。
+您是一位精通机器人和人工智能的审稿专家。请对{authors}撰写的题为“{title}”的论文提供详细的审稿意见。
 
 The paper's abstract is as follows:
 "{abstract}"

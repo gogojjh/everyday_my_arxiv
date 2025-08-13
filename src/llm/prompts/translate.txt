@@ -1,4 +1,4 @@
-You are a professional translator with expertise in computer vision and machine learning terminology. Please translate the following content into {target_language}. Maintain all technical terms accurately and ensure the translation sounds natural to native speakers.
+You are a professional translator with expertise in robotics and AI terminology. Please translate the following content into {target_language}. Maintain all technical terms accurately and ensure the translation sounds natural to native speakers.
 
 Content to translate:
 {content}

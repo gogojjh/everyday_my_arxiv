@@ -1,6 +1,8 @@
 {
   "arxiv": {
-    "categories": ["cs.CV"],
+    "categories": [
+      "cs.RO"
+    ],
     "max_results": 200,
     "recent_days": 3,
     "citation_lookback_days": 60,
@@ -8,13 +10,18 @@
   },
   "report": {
     "max_papers": 10,
-    "languages": ["en"],
-    "output_format": ["markdown", "html"],
+    "languages": [
+      "en"
+    ],
+    "output_format": [
+      "markdown",
+      "html"
+    ],
     "output_directory": "reports"
   },
   "email": {
-    "enabled": true,
-    "subject_prefix": "[Arxiv CV Report]",
+    "enabled": false,
+    "subject_prefix": "[Arxiv RO Report]",
     "include_full_report": true,
     "include_summary": true
   },

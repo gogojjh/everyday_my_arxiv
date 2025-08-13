@@ -113,7 +113,7 @@ def main():
     )
     
     # 11. Save report
-    report_filename = f"arxiv_cv_report_{report_date}.md"
+    report_filename = f"arxiv_ro_report_{report_date}.md"
     markdown_path = markdown_generator.save_report(markdown_report, filename=report_filename)
     
     # 12. Convert to HTML if needed
