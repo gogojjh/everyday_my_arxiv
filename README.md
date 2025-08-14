@@ -57,7 +57,7 @@ arxiv-paper-reports/
 3. Configure your keywords in `config/keywords.json`
 4. Set up your Google API keys as environment variables or in GitHub secrets
 5. Run locally: `python scripts/test_local.py`
-6. The GitHub Action will run automatically every day
+6. The GitHub Action (you need to click ``action`` to manually set the workflow) will run automatically every day
 
 ## Configuration
 
@@ -65,12 +65,14 @@ Edit `config/keywords.json` to specify your research interests. The system will 
 
 ## GitHub Actions Setup
 
-To enable GitHub Actions:
+To enable GitHub Actions with [Reference](https://docs.github.com/zh/actions/how-tos/write-workflows/choose-what-workflows-do/use-variables):
 
-1. Add your Google API key as a GitHub secret named `GOOGLE_API_KEY`
+1. Add your Google API key as a GitHub secret named `GOOGLE_API_KEY` 
 2. Add your email credentials as GitHub secrets
 3. The workflow will run daily and send reports to your email
 4. The daily report contents will be released in Github.
+
+Set Personal Token with [Reference](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
 
 ## Local Testing
 
