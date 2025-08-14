@@ -37,7 +37,7 @@ jobs:
         python scripts/run_daily_report.py
         # Get the report filename and set it as an output
         REPORT_DATE=$(date +%Y-%m-%d)
-        REPORT_FILE="reports/arxiv_cv_report_${REPORT_DATE}.md"
+        REPORT_FILE="reports/arxiv_ro_report_${REPORT_DATE}.md"
         echo "report_file=${REPORT_FILE}" >> $GITHUB_OUTPUT
         echo "report_date=${REPORT_DATE}" >> $GITHUB_OUTPUT
       
