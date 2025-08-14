@@ -49,10 +49,11 @@ jobs:
         retention-days: 30
     
     - name: Create GitHub Release
-      if: github.event_name == 'schedule' # Only for automated runs, not manual triggers
+      if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+      # if: github.event_name == 'schedule' # Only for automated runs, not manual triggers
       uses: softprops/action-gh-release@v1
       with:
-        name: "Arxiv CV Report ${{ steps.generate_report.outputs.report_date }}"
+        name: "Arxiv RO Report ${{ steps.generate_report.outputs.report_date }}"
         tag_name: "report-${{ steps.generate_report.outputs.report_date }}"
         body_path: ${{ steps.generate_report.outputs.report_file }}
         draft: false
